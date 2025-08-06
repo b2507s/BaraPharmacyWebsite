@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+<head>
+    <meta name = "viewport" content = "with=device-width, initial-scale = 1.0"> <!--helps make responsive-->
+    <title>Bara Pharmacy</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    
+    </head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <a href = "index.html"><img src = images/logoFINAL.jpg></a>
+            <div class = "nav-links" id = "navLinks">
+                <i class="fa fa-times" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About Us</a></li>
+                    <li><a href = "services.html">Services</a></li>
+                    <li><a href = "faq.html">FAQs</a></li>
+                    
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+    
+    <h1>About Us</h1>
+    </section>
+    
+    <!---- about us content ----->
+    <section class = "about-us">
+        <div class = "row">
+            <div class = "about-col">
+                <h1>Our Mission</h1>
+                <p>We are an independent and locally-owned pharmacy located in Northern Virginia that strives to provide personalized, accessible, and trusted pharmacy care that supports the health and well-being of our community—offering expert guidance, quality medications, and genuine care every step of the way.</p>
+                <p>The name 'Bara' comes from the Hebrew word meaning “to create” or “to bring forth,” as seen in the opening of the Bible where God creates with purpose and care. Inspired by this origin, Bara Pharmacy seeks to serve as a place of healing and restoration, working in alignment with God’s mission to care for the physical and spiritual well-being of our community. Through compassionate service, integrity, and excellence, we aim to reflect the Creator’s love in every interaction and prescription we fill.</p>
+                <p>"In the beginning, God created the heavens and the earth." - Genesis 1:1</p>
+                <a href = "https://biblehub.com/hebrew/1254.htm" target = "_blank" class="hero-btn red-btn">Read more about the origin of 'Bara'</a>
+            </div>
+            <div class = "about-col">
+                <img src = "images/outside.jpg">
+            </div>
+        </div>
+    </section>
+
+
+<!--- footer --->
+    <section class = "footer">
+        <h4>About Us</h4>
+        <p>We're your local, independently owned pharmacy committed to providing personalized care and trusted service. From prescriptions<br>to wellness support, we’re here to help you and your family stay healthy every step of the way.</p>
+        <p>Phone: 703-495-3139</p>
+        <p>Fax: </p>
+        <p>Email: barapharmacy@gmail.com</p>
+        <p>7700 Little River Turnpike #103, Annandale, VA 22003</p>
+        
+    </section>
+    
+<!-- Javascript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+    </body>
+</html>

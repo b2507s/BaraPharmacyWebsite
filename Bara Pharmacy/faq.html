@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+<head>
+    <meta name = "viewport" content = "with=device-width, initial-scale = 1.0"> <!--helps make responsive-->
+    <title>Bara Pharmacy</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    
+    </head>
+<body>
+     <section class = "sub-header">
+        <nav>
+            <a href = "index.html"><img src = images/logoFINAL.jpg></a>
+            <div class = "nav-links" id = "navLinks">
+                <i class="fa fa-times" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About Us</a></li>
+                    <li><a href = "services.html">Services</a></li>
+                    <li><a href = "faq.html">FAQs</a></li>
+                    
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+    
+    <h1>Frequently Asked Questions</h1>
+    </section>
+    
+<!-- Services -->
+    <section class = "faq">
+        <h2>How do I refill or transfer a prescription?</h2>
+        <p>Please visit us in person, email us at barapharmacy@gmail.com, or call/send a message to 703-495-3139. We are happy to help!</p>
+        <h2>How much does my prescription cost?</h2>
+        <p>The cost of a prescription depends on what medications the prescription entails. We strongly encourage you to visit us in person to find out the exact price of your prescription</p>
+        <h2>Does Bara Pharmacy accept insurance?</h2>
+        <p>Yes, we accept insurance from most insurance companies. For further details, please contact us at barapharmacy@gmail.com or 703-495-3135.</p>
+        <h2>Which healthcare providers does Bara Pharmacy receive prescriptions from?</h2>
+        <p>We accept prescriptions from any healthcare providers.</p>
+        <h2>Can I transfer my prescriptions from another pharmacy?</h2>
+        <p>Yes, we accept prescriptions from any pharmacy.</p>
+        <h2>How long after I send my prescription can I expect my medication to be ready?</h2>
+        <p>It depends on the medication availability.</p>
+        <h2>How do I know when my medication is ready?</h2>
+        <p>We will contact you through phone call or text message when your medication is ready to be picked up.</p>
+        <h2>Can I get over-the-counter products from Bara Pharmacy?</h2>
+        <p>Yes, we offer over-the-counter medicine as long as appropriate prescriptions are provided.</p>
+        <h2>I'm interested in volunteering at Bara Pharmacy. What should I know?</h2>
+        <p>We are always happy to receive support. Pharmacy interns, PharmD students, and pharmacy technician trainees as well as college and high school students interested in pursuing pharmacy may volunteer. Volunteers will be assisting current pharmacists, communicating with patients, and helping with pharmacy maintenance. For further guidance, please contact us or visit us in person. </p>
+        <h2>Is Bara Pharmacy currently hiring?</h2>
+        <p>Yes, we are open to recruit new pharmacists. Please contact us via email or phone if you are interested.</p>
+        <h2>How can I reach Bara Pharmacy in an emergency? / What if I have a question about my medication after hours?</h2>
+        <p>Please contact us via email (barapharmacy@gmail.com) or phone (703-495-3139).</p>
+        <h2>Does Bara Pharmacy provide prescription/medication delivery?</h2>
+        <p>No, we do not offer home delivery for prescriptions/medications at this time.</p>
+        <h2>Do you provide medication reviews or consultations?</h2>
+        <p>Absolutely. As an independent pharmacy focused on personalized care, we are happy to provide additional information such as medication reviews and consultations.</p>
+        <h2>Do I need an appointment for immunizations?</h2>
+        <p>No. Our hours are 9AM to 6PM Monday through Friday and 9AM to 2PM on Saturdays.</p>
+        <h2>Do you offer services in other languages?</h2>
+        <p>Yes, we can assist in Korean and welcome non-native English speakers of all languages. Please let us know if you need language support when you visit.</p>
+    </section>
+    
+
+<!--- footer --->
+    <section class = "footer">
+        <h4>About Us</h4>
+        <p>We're your local, independently owned pharmacy committed to providing personalized care and trusted service. From prescriptions<br>to wellness support, we’re here to help you and your family stay healthy every step of the way.</p>
+        <p>Phone: 703-495-3139</p>
+        <p>Fax: </p>
+        <p>Email: barapharmacy@gmail.com</p>
+        <p>7700 Little River Turnpike #103, Annandale, VA 22003</p>
+        <a href="https://www.flaticon.com/free-icons/pharmacy" title="pharmacy icons">Pharmacy icons created by smalllikeart - Flaticon</a>
+    </section>
+    
+<!-- Javascript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+    </body>
+</html>

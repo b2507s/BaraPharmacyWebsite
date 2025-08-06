@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+<head>
+    <meta name = "viewport" content = "with=device-width, initial-scale = 1.0"> <!--helps make responsive-->
+    <title>Bara Pharmacy</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    
+    </head>
+<body>
+     <section class = "sub-header">
+        <nav>
+            <a href = "index.html"><img src = images/logoFINAL.jpg></a>
+            <div class = "nav-links" id = "navLinks">
+                <i class="fa fa-times" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About Us</a></li>
+                    <li><a href = "services.html">Services</a></li>
+                    <li><a href = "faq.html">FAQs</a></li>
+                    
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+    
+    <h1>Contact Us</h1>
+    </section>
+    
+<!-- Services -->
+    <section class = "location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.95692386174!2d-77.21391852355018!3d38.83344735047409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64dab6fee8ac3%3A0x4ed7253d27b200e0!2sBara%20Pharmacy!5e0!3m2!1sen!2sus!4v1754000161887!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </section>
+    
+    <section class="contact-us">
+        <div class = "row">
+            <div class = "contact-col">
+                <div>
+                    <i class = "fa fa-home"></i>
+                    <span>
+                        <h5>7700 Little River Turnpike #103,</h5>
+                        <p>Annandale, VA 22003</p>
+                    </span>
+                </div>
+                <div>
+                    <i class = "fa fa-phone"></i>
+                    <span>
+                        <h5>+1 703-495-3135</h5>
+                        <p>9AM - 6PM Monday to Friday, 9AM - 1PM Saturday</p>
+                    </span>
+                </div>
+                <div>
+                    <i class = "fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                        <h5>barapharmacy@gmail.com</h5>
+                        
+                    </span>
+                </div>
+            </div>
+            <div class = "contact-col">
+                <form action = "form-handler.php" method = "post">
+                    <input type = "text" name = "name" placeholder="Name" required>
+                    <input type = "email" name = "email" placeholder="Email address" required>
+                    <input type = "text" name = "subject" placeholder="Subject" required>
+                    <textarea rows = "8" name = "message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+<!--- footer --->
+    <section class = "footer">
+        <h4>About Us</h4>
+        <p>We're your local, independently owned pharmacy committed to providing personalized care and trusted service. From prescriptions<br>to wellness support, we’re here to help you and your family stay healthy every step of the way.</p>
+        <p>Phone: 703-495-3139</p>
+        <p>Fax: </p>
+        <p>Email: barapharmacy@gmail.com</p>
+        <p>7700 Little River Turnpike #103, Annandale, VA 22003</p>
+        <a href="https://www.flaticon.com/free-icons/pharmacy" title="pharmacy icons">Pharmacy icons created by smalllikeart - Flaticon</a>
+    </section>
+    
+<!-- Javascript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+    </body>
+</html>

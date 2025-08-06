@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+<head>
+    <meta name = "viewport" content = "with=device-width, initial-scale = 1.0"> <!--helps make responsive-->
+    <title>Bara Pharmacy</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    
+    </head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <a href = "index.html"><img src = images/logoFINAL.jpg></a>
+            <div class = "nav-links" id = "navLinks">
+                <i class="fa fa-times" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About Us</a></li>
+                    <li><a href = "services.html">Services</a></li>
+                    <li><a href = "faq.html">FAQs</a></li>
+                    
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+    
+    <h1>Our Services</h1>
+    </section>
+    
+    <!---- services ----->
+    <section class = "services">
+        <!----<h1>Our Services</h1>
+        <p>We offer a wide range of services including providing medications.</p> --->
+        <!---<div class = "row">---->
+            <div class = "service-col">
+                <h3>Prescription Refills and Transfers</h3><img src = "images/pharmacy.png">
+                <p>Refilling your prescriptions is available in-store, by phone, or online. Transferring prescriptions from another location is seamless—simply contact us, and we will handle the process for you. We are committed to making your medication management smooth, reliable, and tailored to your individual needs.</p>
+            </div>
+            <div class = "service-col">
+                <h3>Immunizations</h3><img src = "images/injection.png">
+                <p>We provide shingles, flu, tdap, pneumonia immunizations to help keep you and your family healthy throughout the year.</p>
+            </div>
+            <div class = "service-col">
+                <h3>Medications and Products</h3>
+                <img src = "images/first-aid-kit.png">
+                <p>From everyday remedies to specialty prescriptions, our pharmacy is stocked with high-quality, trusted brands in medications, over-the-counter products, and wellness essentials. Count on us for personalized service and the products you need to feel your best, every day.</p>
+            </div>
+        <!-----</div>---->
+    </section>
+
+    
+
+<!--- footer --->
+    <section class = "footer">
+        <h4>About Us</h4>
+        <p>We're your local, independently owned pharmacy committed to providing personalized care and trusted service. From prescriptions<br>to wellness support, we’re here to help you and your family stay healthy every step of the way.</p>
+        <p>Phone: 703-495-3139</p>
+        <p>Fax: </p>
+        <p>Email: barapharmacy@gmail.com</p>
+        <p>7700 Little River Turnpike #103, Annandale, VA 22003</p>
+        
+    </section>
+    
+<!-- Javascript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+    </body>
+</html>
